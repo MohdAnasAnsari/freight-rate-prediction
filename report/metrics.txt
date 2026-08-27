@@ -1,0 +1,5 @@
+Temporal holdout: train 2025-01-01 through 2025-08-31; holdout 2025-09-01 through 2025-10-31.
+
+                         Model     MAE   MAPE    RMSE
+Equipment median $/mi baseline 229.097 10.487 670.660
+           LightGBM log-target 110.536  4.723 635.282
