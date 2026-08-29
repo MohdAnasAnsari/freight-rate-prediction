@@ -15,6 +15,16 @@ python -m pip install -r requirements.txt
 
 Place the supplied CSV files in `data/`. Keep the provided `score.py` unchanged.
 
+### VS Code notebook kernel
+
+For `notebooks/01_eda.ipynb`, choose **Select Kernel → Python Environments → `.venv\\Scripts\\python.exe`**. Its display name is `Python (.venv freight-rate-prediction)`. Before presenting, use **Restart Kernel and Run All Cells** so execution starts from a clean state.
+
+The command-line equivalent on Windows is:
+
+```powershell
+.\.venv\Scripts\jupyter-nbconvert.exe --to notebook --execute --inplace notebooks\01_eda.ipynb --ExecutePreprocessor.kernel_name=freight-rate-prediction --ExecutePreprocessor.timeout=180
+```
+
 ## Run
 
 Run these commands from the repository root, in this order:
